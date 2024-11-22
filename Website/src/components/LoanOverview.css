@@ -1,0 +1,111 @@
+/* LoanOverview.css */
+
+.loan-overview-card {
+    border: 1px solid #848080 !important; /* Ensure the main card has a border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.loan-overview-card .loan-overview-title {
+    /* font-size: 15px; */
+    /* padding: 1rem; */
+    margin-bottom: 0.5rem;
+}
+
+.loan-overview-card .property-card {
+    border: none; /* Remove border from inner property card */
+}
+
+.loan-overview-card .property-duration-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.01rem;
+}
+
+.loan-overview-card .property-duration-row > * {
+    padding: 2 0.1rem;
+}
+
+.loan-overview-card .property-name,
+.loan-overview-card .duration {
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.loan-overview-card .duration {
+    color: #6c757d;
+}
+
+.loan-overview-card .clock-icon {
+    margin-right: 0.25rem;
+    font-size: 1rem;
+}
+
+.loan-overview-card .interest-rate-container {
+    margin-bottom: 0.1rem;
+}
+
+/* Correctly target the progress bar background */
+.loan-overview-card .progress {  
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef; /* Light gray background for the bar */
+    overflow: hidden; /* Ensure rounded corners on the background */
+}
+
+.loan-overview-card .progress-bar {
+    background-color: #000000; /* black fill color */
+    border-radius: 5px;
+    height: 75%;
+}
+
+.loan-overview-card .mini-cards-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.001rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem; /* Add margin to the bottom of the mini-card container to fix the gap */
+    margin-left: -20px;
+}
+
+.loan-overview-card .mini-card {
+    border: none;
+    background-color: #ffffff;
+    margin: 0.25rem;
+    text-align: left;
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 126px; /* Minimum width to prevent squishing */
+    max-width: 170px; /* Optional: Set a max width for larger screens */
+    min-height: 10px;
+    transition: transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.loan-overview-card .mini-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loan-overview-card .mini-card .label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.loan-overview-card .mini-card .value {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .loan-overview-card .mini-cards-container {
+        justify-content: flex-start;
+    }
+    .loan-overview-card .mini-card {
+        flex-basis: calc(50% - 0.5rem);
+    }
+}

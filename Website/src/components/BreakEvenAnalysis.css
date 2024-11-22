@@ -1,0 +1,58 @@
+/* BreakEvenAnalysis.css */
+
+.break-even-analysis-card {
+    border: 1px solid #848080;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.break-even-analysis-card .mb-4 { /* Targets the Card.Title with mb-4 */
+    margin-bottom: 1rem !important; /* Override Bootstrap default */
+}
+
+.break-even-analysis-card .mini-cards-container {
+    display: flex;
+    justify-content: center; /* Center the single mini-card */
+    margin-bottom: 1rem;
+}
+
+.break-even-analysis-card .mini-card {
+    border: none;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 0.75rem;
+    flex: 1; /* Takes up the full width of the container */
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.break-even-analysis-card .mini-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.break-even-analysis-card .mini-card .label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.break-even-analysis-card .mini-card .value {
+    font-size: 1.5rem; /* Larger text for the break-even year */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .break-even-analysis-card .mini-cards-container {
+        justify-content: center; /* Ensure centering on smaller screens */
+    }
+
+    .break-even-analysis-card .mini-card {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+}

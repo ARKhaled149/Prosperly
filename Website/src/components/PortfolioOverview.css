@@ -1,0 +1,63 @@
+.portfolio-overview-title {
+    /* font-weight: bold; */
+    padding: 20px;
+    font-size: 15px !important;
+}
+
+.portfolio-overview-card {
+    border: 1px solid #848080 !important;
+    border-radius: 10px; /* Add rounded corners to the section */    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    overflow: hidden; /* Prevent rounded corners from being clipped by inner content */
+}
+
+.mini-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 1rem; /* Add some space between cards */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.mini-card {
+    width: calc(20% - 0.8rem); /* Adjust width for responsiveness (5 cards - margin) */
+    margin-bottom: 1rem;
+    flex: 1 0 auto; /* Allow cards to shrink but not grow */
+}
+
+.mini-card .card {
+    padding: 0.001rem; /* Add padding inside the mini-cards */
+    background-color: rgb(226, 221, 221);
+    border-radius: 8px; /* Add rounded corners to the mini-cards */
+}
+
+.mini-card-label {
+    padding-left: 10px; /* Add left padding to the label */
+    font-size: 12px !important;
+}
+
+.mini-card-value {
+    padding-left: 10px; /* Add left padding to the value */
+}
+
+.chart-container {
+    width: 50%;
+    height: 200px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) { /* Example media query for smaller screens */
+    .mini-card {
+        width: calc(50% - 0.5rem); /* 2 cards per row on smaller screens */
+    }
+
+    .chart-container {
+        width: 100%; /* Chart takes full width on smaller screens */
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+

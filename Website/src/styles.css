@@ -1,0 +1,88 @@
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and items */
+    align-items: center; /* Center items vertically */
+    background-color: rgb(0, 0, 0); /* Black background */
+    padding: 10px 20px; /* Padding around the navbar */
+    position: fixed; /* Keep it at the top */   
+    width: 100%; /* Full width */
+    top: 0; /* Positioned at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    margin-bottom: 20%;
+}
+
+.navbar-logo {
+    color: white;
+    display: flex; /* Use flex to align image */
+    align-items: center; /* Center image vertically */
+}
+
+.logo-image {
+    height: 40px; /* Adjust the height of the logo image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-list {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for horizontal layout */
+    flex-grow: 0; /* Prevent the list from growing */
+}
+
+.navbar-item {
+    color: white; /* White text color */
+    margin-left: 20px; /* Spacing between items */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-item:last-child {
+    margin-right: 40px; /* No margin for the last item */
+}
+
+
+body {
+    padding-top: 50px;
+    font-family: 'Arial', sans-serif; /* Or your preferred font */
+    background-color: var(--light-gray); /* Set a light gray background */
+}
+
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.card-text {
+    margin-bottom: 0.5rem; /* Adjust as needed */
+}
+
+.h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05); /* Subtle striping */
+}
+
+.recharts-responsive-container {
+    margin-bottom: 20px;
+}
+
+.loan-overview .table th {
+    /* Style table headers in Loan Overview */
+    background-color: var(--primary-color); /* Example */
+    color: white;
+}
